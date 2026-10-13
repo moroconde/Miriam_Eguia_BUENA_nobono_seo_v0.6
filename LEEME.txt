@@ -1,0 +1,32 @@
+Miriam Eguía Nutrición — Web corporativa
+========================================
+
+CONTENIDO DE LA CARPETA web/
+  index.html          Inicio
+  servicios.html      Servicios y tratamientos
+  sobre.html          Sobre mí + La clínica
+  contacto.html       Cita previa y formulario
+  aviso-legal.html    Aviso legal y privacidad
+  politica-cookies.html
+  robots.txt / sitemap.xml
+  css/                Estilos (Bootstrap + estilos.css)
+  scripts/            JS del menú, cita y cookies
+  imagenes/           Fotos, logos y medios
+  enviar.php          Envío del formulario (IONOS SMTP)
+  config.mail.php     Credenciales de correo (protegido)
+
+FORMULARIO DE CONTACTO (IONOS)
+  1. Edita config.mail.php y pon la contraseña del buzón
+     me@miriameguianutricion.com
+  2. SMTP: smtp.ionos.es, puerto 587, STARTTLS
+  3. Sube toda la carpeta web/ a la raíz del hosting
+     (o a public_html según IONOS)
+
+SEO
+  - Títulos y meta descripciones únicas por página
+  - Canonical, robots.txt, sitemap.xml
+  - Datos estructurados (MedicalClinic) en inicio
+  - Caché y compresión en .htaccess
+
+NOTA: La sección de Bonos se ha retirado de momento
+      (la clínica no los ofrece como regalo).

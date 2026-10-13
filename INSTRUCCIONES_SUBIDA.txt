@@ -1,0 +1,84 @@
+CÓMO SUBIR LA WEB A IONOS — miriameguianutricion.com
+=====================================================
+
+Yo (Grok) NO puedo acceder a tu cuenta de IONOS. Tú tienes que subir
+los archivos. Es sencillo: 10–15 minutos.
+
+────────────────────────────────────────
+PASO 1 — Descarga y descomprime
+────────────────────────────────────────
+1. Descarga el archivo Miriam_Eguia_Nutricion_Web_BUENA.zip
+2. Descomprímelo en tu ordenador.
+3. Verás una carpeta llamada "web" con todo el contenido.
+
+────────────────────────────────────────
+PASO 2 — Contraseña del correo (formulario)
+────────────────────────────────────────
+1. Entra en https://www.ionos.es → Acceso clientes
+2. Ve a: Correo electrónico → Buzones
+3. Localiza me@miriameguianutricion.com
+4. Copia o restablece la CONTRASEÑA de ese buzón
+5. Abre el archivo web/config.mail.php con el Bloc de notas
+6. Busca la línea:
+      'password'   => '',
+7. Pon la contraseña entre las comillas, por ejemplo:
+      'password'   => 'TuContraseñaAqui',
+8. Guarda el archivo.
+
+Sin este paso el formulario de contacto NO enviará correos.
+
+────────────────────────────────────────
+PASO 3 — Subir los archivos a IONOS
+────────────────────────────────────────
+Opción A (recomendada): Administrador de archivos de IONOS
+1. Panel IONOS → Hosting → tu dominio miriameguianutricion.com
+2. Abre "Administrador de archivos" o "FTP"
+3. Entra en la carpeta raíz del sitio:
+     - suele ser: /
+     - o: /httpdocs
+     - o: /public_html
+   (la que contenga el index.html actual de la web antigua)
+4. BORRA o renombra la web antigua (haz copia de seguridad antes
+   si quieres conservarla: renómbrala a "web_antigua")
+5. Sube TODO el contenido de la carpeta "web"
+   (index.html, css/, imagenes/, scripts/, enviar.php, etc.)
+   NO subas la carpeta "web" entera como subcarpeta:
+   sube lo que HAY DENTRO de web/ a la raíz del hosting.
+
+Opción B: Cliente FTP (FileZilla, Cyberduck…)
+1. En IONOS → Hosting → Datos de acceso FTP
+   anota: servidor, usuario y contraseña FTP
+2. Conéctate con FileZilla
+3. En el servidor, ve a la raíz (httpdocs / public_html)
+4. Arrastra el contenido de la carpeta web/ a esa raíz
+
+────────────────────────────────────────
+PASO 4 — Comprobar
+────────────────────────────────────────
+1. Abre https://miriameguianutricion.com
+2. Revisa: Inicio, Servicios, Sobre mí, Contacto
+3. Prueba el formulario de contacto (envíate un mensaje de prueba)
+4. Comprueba el mapa y los enlaces de Google Maps
+
+Si el formulario no llega:
+- Revisa que la contraseña en config.mail.php sea correcta
+- En IONOS el SMTP debe ser: smtp.ionos.es, puerto 587, TLS
+- A veces IONOS tarda unos minutos en activar el envío
+
+────────────────────────────────────────
+PASO 5 — SEO (recomendado, 5 minutos)
+────────────────────────────────────────
+1. Entra en Google Search Console (search.google.com/search-console)
+2. Añade la propiedad miriameguianutricion.com si no está
+3. Envía el sitemap:
+   https://miriameguianutricion.com/sitemap.xml
+
+────────────────────────────────────────
+RESUMEN DE QUÉ SUBIR
+────────────────────────────────────────
+Contenido de la carpeta web/  →  raíz del hosting IONOS
+(index.html debe quedar en la raíz, no dentro de /web/)
+
+NO hace falta subir LEEME.txt ni INSTRUCCIONES_SUBIDA.txt
+(son solo para ti).
+

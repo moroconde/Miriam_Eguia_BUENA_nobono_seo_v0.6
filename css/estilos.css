@@ -1,0 +1,293 @@
+/* Identidad Miriam Eguía Nutrición — encima de Bootstrap 5 */
+:root {
+  --paper: #f3eee4;
+  --paper-deep: #e7dfd0;
+  --cream: #faf7f1;
+  --ink: #1c1a17;
+  --ink-soft: #3f3a34;
+  --muted: #6f675e;
+  --line: #d5cbba;
+  --verde: #6ca884;
+  --verde-suave: #88c09c;
+  --verde-profundo: #3e6b52;
+  --font-sans: "Figtree", system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --shadow-card: 0 1px 0 0 rgb(28 26 23 / 0.06), 0 18px 40px -24px rgb(28 26 23 / 0.28);
+}
+
+html, body { overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+.navbar-me {
+  background: rgb(243 238 228 / 0.94);
+  border-bottom: 1px solid rgb(213 203 186 / 0.85);
+  backdrop-filter: blur(12px);
+}
+.logo-header { height: 46px; width: auto; max-width: 220px; object-fit: contain; }
+.logo-footer { height: 52px; width: auto; max-width: 240px; object-fit: contain; }
+.navbar-me .nav-link {
+  color: var(--ink-soft);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem !important;
+  font-size: 0.95rem;
+}
+.navbar-me .nav-link:hover { color: var(--ink); background: var(--paper-deep); }
+.navbar-me .nav-link.active { color: #fff; background: var(--verde); }
+.navbar-toggler { border-color: var(--line); }
+
+.btn-verde {
+  --bs-btn-bg: var(--verde);
+  --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-bg: var(--verde-profundo);
+  --bs-btn-hover-border-color: var(--verde-profundo);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: var(--verde-profundo);
+  --bs-btn-active-color: #fff;
+  border-radius: 999px;
+  padding-inline: 1.25rem;
+  font-weight: 500;
+}
+.btn-linea {
+  border-radius: 999px;
+  padding-inline: 1.25rem;
+  border-color: var(--line);
+  color: var(--ink);
+  background: transparent;
+}
+.btn-linea:hover { background: var(--cream); border-color: #c4b9a6; color: var(--ink); }
+.btn-tinta {
+  border-radius: 999px;
+  padding-inline: 1.25rem;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+.btn-tinta:hover { background: var(--ink-soft); border-color: var(--ink-soft); color: #fff; }
+.btn-crema {
+  border-radius: 999px;
+  padding-inline: 1.25rem;
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--verde-profundo);
+}
+.btn-crema:hover { background: #fff; color: var(--verde-profundo); }
+
+.kicker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--verde-profundo);
+}
+.hero-copy h1 { font-size: clamp(2.2rem, 4.5vw, 3.6rem); letter-spacing: -0.03em; line-height: 1.08; }
+.lead-me { color: var(--ink-soft); font-size: 1.08rem; max-width: 38rem; }
+
+.carousel-me .carousel-item img {
+  width: 100%;
+  height: min(62vh, 560px);
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-me .carousel-caption {
+  background: linear-gradient(transparent, rgb(28 26 23 / 0.62));
+  left: 0; right: 0; bottom: 0;
+  padding: 2.5rem 1.5rem 1.6rem;
+  text-align: left;
+}
+.carousel-indicators [data-bs-target] { width: 10px; height: 10px; border-radius: 50%; }
+
+.social-me {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.1rem;
+}
+.social-me a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 999px;
+  border: 1px solid rgb(255 255 255 / 0.22);
+  color: #f4faf6;
+}
+.social-me a:hover {
+  background: rgb(255 255 255 / 0.12);
+  color: #fff;
+  border-color: rgb(255 255 255 / 0.45);
+}
+.social-me svg { width: 1.05rem; height: 1.05rem; }
+
+.band { background: var(--cream); border-block: 1px solid var(--line); }
+.card-me {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-card);
+}
+.pill-icon { width: 1.25rem; height: 1.25rem; color: var(--verde); }
+.quote-me {
+  border-left: 2px solid var(--verde);
+  padding-left: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.service-card { overflow: hidden; }
+.service-card img { width: 100%; height: 100%; min-height: 220px; object-fit: cover; }
+@media (max-width: 576px) {
+  .service-card ul { columns: 1 !important; }
+}
+
+.footer-me { background: var(--verde-profundo); color: #f4faf6; }
+.footer-me a { color: #e4f3ea; text-decoration: none; }
+.footer-me a:hover { color: #fff; }
+.footer-me .tiny { letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.75rem; color: rgb(255 255 255 / 0.55); }
+
+.form-me .form-control, .form-me .form-select {
+  border-color: var(--line);
+  background: var(--cream);
+  border-radius: 0.75rem;
+}
+.form-me .form-control:focus, .form-me .form-select:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 0 0.2rem rgb(108 168 132 / 0.25);
+}
+.form-me label {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+.map-me iframe { width: 100%; height: 280px; border: 0; filter: grayscale(0.4); }
+
+.sobre-foto { width: 100%; border-radius: 1.5rem; object-fit: cover; }
+.creds { background: var(--cream); border: 1px solid var(--line); border-radius: 1rem; }
+.medios-me {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+@media (min-width: 576px) {
+  .medios-me { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.medios-me a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.75rem;
+  padding: 0 0.75rem;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+}
+.medios-me a:hover { border-color: var(--verde); background: var(--paper); }
+.medios-me img { height: 2.5rem; width: 100%; object-fit: contain; }
+
+.banda-clara { background: var(--paper-deep); color: var(--ink); }
+.legal { color: var(--ink-soft); max-width: 46rem; }
+.legal h2 { font-size: 1.45rem; margin-top: 1.75rem; color: var(--ink); }
+.legal p, .legal li { font-size: 0.95rem; line-height: 1.65; }
+.legal ul { margin-top: 0.75rem; padding-left: 1.1rem; }
+.legal a { color: var(--verde-profundo); }
+.map-cover {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--paper-deep);
+}
+
+/* Tarjetas bono */
+.voucher-card {
+  container-type: inline-size;
+  container-name: voucher;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  aspect-ratio: 86 / 54;
+  border-radius: 1.15rem;
+  box-shadow: var(--shadow-card);
+  color: var(--ink);
+  font-size: 2.3cqw;
+}
+.voucher-card.is-dark { color: var(--cream); }
+.voucher-card .v-paper, .voucher-card .v-wash { position: absolute; inset: 0; pointer-events: none; }
+.voucher-card .v-paper { width: 100%; height: 100%; object-fit: cover; }
+.voucher-card .v-wash-light { background: rgb(250 247 241 / 0.38); }
+.voucher-card .v-wash-dark { background: color-mix(in oklab, var(--verde-profundo) 42%, transparent); }
+.voucher-card .v-ring, .voucher-card .v-ring-inner { position: absolute; pointer-events: none; border: 1px solid; }
+.voucher-card .v-ring { inset: 0.55em; border-radius: 0.85em; border-color: color-mix(in oklab, currentColor 28%, transparent); }
+.voucher-card .v-ring-inner { inset: 0.95em; border-radius: 0.7em; border-color: color-mix(in oklab, currentColor 48%, transparent); }
+.voucher-card .v-frame { position: relative; z-index: 1; display: flex; height: 100%; flex-direction: column; padding: 6.2% 7%; min-height: 0; }
+.voucher-card .v-top { display: flex; flex-shrink: 0; align-items: flex-start; justify-content: space-between; gap: 1em; }
+.voucher-card .v-logo { height: 3.35em; width: auto; max-width: 58%; object-fit: contain; object-position: left center; }
+.voucher-card .v-kicker { padding-top: 0.35em; font-size: 0.72em; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: color-mix(in oklab, currentColor 62%, transparent); }
+.voucher-card .v-mid { display: grid; flex: 1; min-height: 0; grid-template-columns: 1.15fr 0.85fr; align-items: center; gap: 0.8em; margin: 0.4em 0; }
+.voucher-card .v-num { font-family: var(--font-display); font-size: 6.4em; font-weight: 500; line-height: 0.78; letter-spacing: -0.04em; margin: 0; }
+.voucher-card .v-title { margin: 0.15em 0 0; font-family: var(--font-display); font-size: 1.35em; font-style: italic; line-height: 1.15; }
+.voucher-card .v-msg { margin: 0.55em 0 0; max-width: 34ch; font-size: 0.78em; line-height: 1.35; color: color-mix(in oklab, currentColor 68%, transparent); }
+.voucher-card .v-emblem {
+  display: flex; align-items: center; justify-content: center;
+  height: 10.5em; width: 10.5em; max-height: 100%; margin-left: auto;
+  border-radius: 999px; background: rgb(250 247 241 / 0.72);
+  box-shadow: inset 0 0 0 1px rgb(28 26 23 / 0.08);
+}
+.voucher-card.is-dark .v-emblem { background: rgb(250 247 241 / 0.95); }
+.voucher-card .v-emblem img { height: 78%; width: auto; object-fit: contain; }
+.voucher-card .v-bot {
+  display: flex; flex-direction: column; flex-shrink: 0; gap: 0.45em;
+  border-top: 1px solid color-mix(in oklab, currentColor 28%, transparent);
+  padding-top: 0.7em; font-size: 0.72em;
+}
+.voucher-card .v-who { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2em; }
+.voucher-card .v-label { display: block; font-size: 0.85em; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: color-mix(in oklab, currentColor 58%, transparent); }
+.voucher-card .v-script { display: block; margin-top: 0.15em; font-family: var(--font-display); font-size: 1.45em; font-style: italic; line-height: 1.1; }
+.voucher-card .v-meta { margin: 0; line-height: 1.35; color: color-mix(in oklab, currentColor 62%, transparent); }
+.voucher-card .v-dots { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.45em; margin: 0; padding: 0; list-style: none; }
+.voucher-card .v-dot {
+  display: flex; aspect-ratio: 1; align-items: center; justify-content: center;
+  border-radius: 999px; border: 1px solid color-mix(in oklab, currentColor 40%, transparent);
+  font-size: 0.7em;
+}
+.voucher-card .v-back-grid { display: grid; flex: 1; min-height: 0; grid-template-columns: 1.25fr 0.9fr; align-items: center; gap: 1.2em; margin: 0.6em 0; }
+.voucher-card .v-conditions { margin: 0; padding: 0; list-style: none; font-size: 0.68em; line-height: 1.4; color: color-mix(in oklab, currentColor 72%, transparent); }
+.voucher-card .v-conditions li { margin-bottom: 0.35em; }
+@media (max-width: 520px) {
+  .voucher-card .v-mid { grid-template-columns: 1fr auto; }
+  .voucher-card .v-emblem { height: 7.2em; width: 7.2em; }
+  .voucher-card .v-num { font-size: 5.2em; }
+  .voucher-card .v-back-grid { grid-template-columns: 1fr; }
+  .carousel-me .carousel-item img { height: 42vh; }
+}
+
+.seg { display: inline-flex; border: 1px solid var(--line); background: var(--cream); border-radius: 999px; padding: 0.2rem; }
+.seg button { height: 2.2rem; padding: 0 1rem; border: 0; background: transparent; border-radius: 999px; font-size: 0.9rem; color: var(--ink-soft); }
+.seg button.is-on { background: var(--verde); color: #fff; }
+.offscreen { position: absolute; left: -200vw; top: 0; pointer-events: none; }
+.print-sheet { display: none; }
+
+@media print {
+  @page { size: A4 landscape; margin: 10mm; }
+  .no-print { display: none !important; }
+  .print-sheet { display: flex !important; gap: 12mm; justify-content: center; }
+}
